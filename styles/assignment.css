@@ -102,6 +102,7 @@ header {
     font-weight: 500;
 }
 
+
 .enroll-btn {
     width: 140px;
     height: 35px;
@@ -378,11 +379,11 @@ header {
 }
 /* responsive media query */
 
-@media (max-width: 576px) {
+@media screen and (max-width:576px){
     header {
         margin: 10px 20px;
         padding: 10px 0px;
-        border: 1px solid orange;
+        border-bottom: 1px solid orange;
     }
 
     .logo-div p {
@@ -404,6 +405,11 @@ header {
     .icon-bar {
         display: block;
     }
+
+    .left-side-cart{
+        display: none;
+    }
+    
 
 
 
@@ -474,7 +480,11 @@ header {
 .footer {
     display: flex;
     flex-direction: column;
+    margin-top: -430px;
+    width: 500px;
     height: 500px;
+
+
 }
 
 .footer-left-side {
@@ -505,3 +515,11 @@ header {
 
 }
 } 
+
+
+/* @media screen and (max-width:992px){
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+} */
